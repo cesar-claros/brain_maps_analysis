@@ -1327,7 +1327,7 @@ krs = KerasRandomSearchCV(model.make_model, param_grid, cv=cv, monitor='val_loss
 <div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[&nbsp;]:</div><div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[22]:</div><div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
         
         
         <div class="zeroclipboard-container">
@@ -1383,8 +1383,63 @@ krs.search(trainData, trainTarget)</div>
 
 ***** (1/1) *****
 Search({&#39;arc_type&#39;: 4, &#39;lr&#39;: 0.01, &#39;batch_size&#39;: 12, &#39;epochs&#39;: 40, &#39;cat_input_type&#39;: &#39;None&#39;, &#39;n_maps&#39;: 2})
+SCORE: 5.94333 at epoch 36
+
+##################
+###  Fold 002  ###
+##################
+
+1 trials detected for (&#39;arc_type&#39;, &#39;lr&#39;, &#39;batch_size&#39;, &#39;epochs&#39;, &#39;cat_input_type&#39;, &#39;n_maps&#39;)
+
+***** (1/1) *****
+Search({&#39;arc_type&#39;: 4, &#39;lr&#39;: 0.01, &#39;batch_size&#39;: 12, &#39;epochs&#39;: 40, &#39;cat_input_type&#39;: &#39;None&#39;, &#39;n_maps&#39;: 2})
+SCORE: 5.16087 at epoch 40
+
+##################
+###  Fold 003  ###
+##################
+
+1 trials detected for (&#39;arc_type&#39;, &#39;lr&#39;, &#39;batch_size&#39;, &#39;epochs&#39;, &#39;cat_input_type&#39;, &#39;n_maps&#39;)
+
+***** (1/1) *****
+Search({&#39;arc_type&#39;: 4, &#39;lr&#39;: 0.01, &#39;batch_size&#39;: 12, &#39;epochs&#39;: 40, &#39;cat_input_type&#39;: &#39;None&#39;, &#39;n_maps&#39;: 2})
+SCORE: 5.25177 at epoch 36
+
+##################
+###  Fold 004  ###
+##################
+
+1 trials detected for (&#39;arc_type&#39;, &#39;lr&#39;, &#39;batch_size&#39;, &#39;epochs&#39;, &#39;cat_input_type&#39;, &#39;n_maps&#39;)
+
+***** (1/1) *****
+Search({&#39;arc_type&#39;: 4, &#39;lr&#39;: 0.01, &#39;batch_size&#39;: 12, &#39;epochs&#39;: 40, &#39;cat_input_type&#39;: &#39;None&#39;, &#39;n_maps&#39;: 2})
+SCORE: 7.50409 at epoch 37
+
+##################
+###  Fold 005  ###
+##################
+
+1 trials detected for (&#39;arc_type&#39;, &#39;lr&#39;, &#39;batch_size&#39;, &#39;epochs&#39;, &#39;cat_input_type&#39;, &#39;n_maps&#39;)
+
+***** (1/1) *****
+Search({&#39;arc_type&#39;: 4, &#39;lr&#39;: 0.01, &#39;batch_size&#39;: 12, &#39;epochs&#39;: 40, &#39;cat_input_type&#39;: &#39;None&#39;, &#39;n_maps&#39;: 2})
+SCORE: 7.22326 at epoch 33
 </pre>
 </div>
+</div>
+
+<div class="jp-OutputArea-child">
+
+    
+    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[22]:</div>
+
+
+
+
+<div class="jp-RenderedText jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/plain">
+<pre>&lt;kerashypetune.KerasRandomSearchCV&gt;</pre>
+</div>
+
 </div>
 
 </div>
@@ -1396,7 +1451,7 @@ Search({&#39;arc_type&#39;: 4, &#39;lr&#39;: 0.01, &#39;batch_size&#39;: 12, &#3
 <div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[&nbsp;]:</div><div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[23]:</div><div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
         
         
         <div class="zeroclipboard-container">
@@ -1428,7 +1483,7 @@ Search({&#39;arc_type&#39;: 4, &#39;lr&#39;: 0.01, &#39;batch_size&#39;: 12, &#3
 <div class="jp-OutputArea-child">
 
     
-    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[&nbsp;]:</div>
+    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[23]:</div>
 
 
 
@@ -1456,45 +1511,60 @@ Search({&#39;arc_type&#39;: 4, &#39;lr&#39;: 0.01, &#39;batch_size&#39;: 12, &#3
       <th>batch_size</th>
       <th>epochs</th>
       <th>cat_input_type</th>
+      <th>n_maps</th>
       <th>steps_per_epoch</th>
     </tr>
   </thead>
   <tbody>
     <tr>
       <th>0</th>
-      <td>1</td>
-      <td>0.00005</td>
       <td>4</td>
-      <td>17</td>
-      <td>sex_study</td>
-      <td>43</td>
+      <td>0.01</td>
+      <td>12</td>
+      <td>36</td>
+      <td>None</td>
+      <td>2</td>
+      <td>15</td>
     </tr>
     <tr>
       <th>1</th>
-      <td>1</td>
-      <td>0.00005</td>
       <td>4</td>
-      <td>11</td>
-      <td>sex_study</td>
-      <td>43</td>
+      <td>0.01</td>
+      <td>12</td>
+      <td>40</td>
+      <td>None</td>
+      <td>2</td>
+      <td>15</td>
     </tr>
     <tr>
       <th>2</th>
-      <td>1</td>
-      <td>0.00005</td>
       <td>4</td>
-      <td>19</td>
-      <td>sex_study</td>
-      <td>43</td>
+      <td>0.01</td>
+      <td>12</td>
+      <td>36</td>
+      <td>None</td>
+      <td>2</td>
+      <td>15</td>
     </tr>
     <tr>
       <th>3</th>
-      <td>1</td>
-      <td>0.00005</td>
       <td>4</td>
-      <td>19</td>
-      <td>sex_study</td>
-      <td>43</td>
+      <td>0.01</td>
+      <td>12</td>
+      <td>37</td>
+      <td>None</td>
+      <td>2</td>
+      <td>15</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>4</td>
+      <td>0.01</td>
+      <td>12</td>
+      <td>33</td>
+      <td>None</td>
+      <td>2</td>
+      <td>15</td>
     </tr>
   </tbody>
 </table>
@@ -1512,7 +1582,7 @@ Search({&#39;arc_type&#39;: 4, &#39;lr&#39;: 0.01, &#39;batch_size&#39;: 12, &#3
 <div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[&nbsp;]:</div><div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[24]:</div><div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
         
         
         <div class="zeroclipboard-container">
@@ -1544,7 +1614,7 @@ Search({&#39;arc_type&#39;: 4, &#39;lr&#39;: 0.01, &#39;batch_size&#39;: 12, &#3
 <div class="jp-OutputArea-child">
 
     
-    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[&nbsp;]:</div>
+    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[24]:</div>
 
 
 
@@ -1571,50 +1641,65 @@ Search({&#39;arc_type&#39;: 4, &#39;lr&#39;: 0.01, &#39;batch_size&#39;: 12, &#3
       <th>fold 2</th>
       <th>fold 3</th>
       <th>fold 4</th>
+      <th>fold 5</th>
     </tr>
   </thead>
   <tbody>
     <tr>
       <th>arc_type</th>
-      <td>1</td>
-      <td>1</td>
-      <td>1</td>
-      <td>1</td>
+      <td>4</td>
+      <td>4</td>
+      <td>4</td>
+      <td>4</td>
+      <td>4</td>
     </tr>
     <tr>
       <th>lr</th>
-      <td>5e-05</td>
-      <td>5e-05</td>
-      <td>5e-05</td>
-      <td>5e-05</td>
+      <td>0.01</td>
+      <td>0.01</td>
+      <td>0.01</td>
+      <td>0.01</td>
+      <td>0.01</td>
     </tr>
     <tr>
       <th>batch_size</th>
-      <td>4</td>
-      <td>4</td>
-      <td>4</td>
-      <td>4</td>
+      <td>12</td>
+      <td>12</td>
+      <td>12</td>
+      <td>12</td>
+      <td>12</td>
     </tr>
     <tr>
       <th>epochs</th>
-      <td>17</td>
-      <td>11</td>
-      <td>19</td>
-      <td>19</td>
+      <td>36</td>
+      <td>40</td>
+      <td>36</td>
+      <td>37</td>
+      <td>33</td>
     </tr>
     <tr>
       <th>cat_input_type</th>
-      <td>sex_study</td>
-      <td>sex_study</td>
-      <td>sex_study</td>
-      <td>sex_study</td>
+      <td>None</td>
+      <td>None</td>
+      <td>None</td>
+      <td>None</td>
+      <td>None</td>
+    </tr>
+    <tr>
+      <th>n_maps</th>
+      <td>2</td>
+      <td>2</td>
+      <td>2</td>
+      <td>2</td>
+      <td>2</td>
     </tr>
     <tr>
       <th>steps_per_epoch</th>
-      <td>43</td>
-      <td>43</td>
-      <td>43</td>
-      <td>43</td>
+      <td>15</td>
+      <td>15</td>
+      <td>15</td>
+      <td>15</td>
+      <td>15</td>
     </tr>
   </tbody>
 </table>
@@ -1632,7 +1717,7 @@ Search({&#39;arc_type&#39;: 4, &#39;lr&#39;: 0.01, &#39;batch_size&#39;: 12, &#3
 <div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[&nbsp;]:</div><div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[25]:</div><div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
         
         
         <div class="zeroclipboard-container">
@@ -1664,7 +1749,7 @@ Search({&#39;arc_type&#39;: 4, &#39;lr&#39;: 0.01, &#39;batch_size&#39;: 12, &#3
 <div class="jp-OutputArea-child">
 
     
-    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[&nbsp;]:</div>
+    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[25]:</div>
 
 
 
@@ -1691,15 +1776,17 @@ Search({&#39;arc_type&#39;: 4, &#39;lr&#39;: 0.01, &#39;batch_size&#39;: 12, &#3
       <th>fold 2</th>
       <th>fold 3</th>
       <th>fold 4</th>
+      <th>fold 5</th>
     </tr>
   </thead>
   <tbody>
     <tr>
       <th>0</th>
-      <td>69.89584</td>
-      <td>28.81038</td>
-      <td>60.09507</td>
-      <td>64.32593</td>
+      <td>5.94333</td>
+      <td>5.16087</td>
+      <td>5.25177</td>
+      <td>7.50409</td>
+      <td>7.22326</td>
     </tr>
   </tbody>
 </table>
