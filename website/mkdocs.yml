@@ -1,0 +1,12 @@
+site_name: Brain maps analysis
+# site_url: https://example.com
+
+nav:
+- Home: 'index.md'
+- Notebook: 'notebooks/Multi_maps_CV.ipynb'
+
+plugins:
+  - mkdocs-jupyter:
+      include_source: True
+
+  
