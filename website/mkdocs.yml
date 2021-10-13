@@ -1,9 +1,10 @@
 site_name: Brain maps analysis
-# site_url: https://example.com
+site_url: https://cesar-claros.github.io/
 
 nav:
 - Home: 'index.md'
-- Notebook: 'notebooks/Multi_maps_CV.ipynb'
+- Notebook 1: 'notebooks/Multi_maps_CV.ipynb'
+- Notebook 2: 'notebooks/brain_maps_CV.ipynb'
 
 plugins:
   - mkdocs-jupyter:
