@@ -1,6 +1,18 @@
-# Introduction
+# Brain Age Prediction
 
+## Introduction
 This is a collaboration between the Computational Neural Information Engineering Lab and Mechanical Neuroimaging Lab at UDel on neural network design for brain age prediction from structural measures.
+
+## Motivation
+
+## Data description
+
+## Methodology
+
+### Mathematical formulation
+### Neural Network Architecture
+### Cross-validation protocol
+
 <!-- For full documentation visit [mkdocs.org](https://www.mkdocs.org). -->
 
 <!-- ## Commands
